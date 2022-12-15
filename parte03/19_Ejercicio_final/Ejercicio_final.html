@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Crea un tablero con el numero que introduzca el usuario. 
+        
+        let tablero; 
+        tablero = parseInt(prompt("Introduzca un numero")); 
+
+        let resultado1 = ""
+        let resultado2 = ""
+
+        //creamos la primera linea del tablera donde el numero par sera X y el numero impar sera 0
+        for (let fila = 1; fila <= tablero; fila = fila + 1){
+            if (fila % 2 == 0){
+                resultado1 = resultado1 + ("X");
+            }
+            else {
+                resultado1 = resultado1 + ("O");
+            }
+        }
+        //creamos la segunda linea del tablero donde el numero par sera 0 y el numero impar sera X 
+        for (let fila = 1; fila <= tablero; fila = fila + 1){
+            if (fila % 2 == 0){
+                resultado2 = resultado2 + ("O");
+            }
+            else {
+                resultado2 = resultado2 + ("X");
+            }
+        }
+
+        for (let repetir = 1 ; repetir <= tablero; repetir = repetir + 1){
+            console.log(resultado1);
+            console.log(resultado2);
+        }
+    </script>
+</body>
+</html>
