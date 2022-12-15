@@ -14,8 +14,8 @@
         let tablero; 
         tablero = parseInt(prompt("Introduzca un numero")); 
 
-        let resultado1 = ""
-        let resultado2 = ""
+        let resultado1 = ""  //resultado de la primera linea. 
+        let resultado2 = ""  //resultado de la segunda linea. 
 
         //creamos la primera linea del tablera donde el numero par sera X y el numero impar sera 0
         for (let fila = 1; fila <= tablero; fila = fila + 1){
@@ -36,7 +36,7 @@
             }
         }
 
-        for (let repetir = 1 ; repetir <= tablero; repetir = repetir + 1){
+        for (let repetir = 1 ; repetir <= tablero/2; repetir = repetir + 1){  //incluyo el /2 para que el tablero tenga las mismas dimensiones. 
             console.log(resultado1);
             console.log(resultado2);
         }
