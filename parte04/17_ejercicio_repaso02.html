@@ -19,11 +19,11 @@
         * y otra subcadena que contenga el segundo número
         */
         
-        let respuesta = prompt("Escribe una suma")
+        let suma = prompt("Escribe una suma")
 
-        let posicionSigno = respuesta.indexOf("+"); //nos indica la posicion del + 
-        let Posicion1 = respuesta.substring(0,posicionSigno); // aqui esta bien porque empieza del 0 y s
-        let Posicion2 = respuesta.substring(posicionSigno + 1, 10); // +1 porque sino empieza desde la sumana y apareceria el signo. 
+        let posicionSigno = suma.indexOf("+"); //nos indica la posicion del + 
+        let Posicion1 = suma.substring(0,posicionSigno); // aqui esta bien porque empieza del 0 y s
+        let Posicion2 = suma.substring(posicionSigno + 1, 100); // +1 porque sino empieza desde la sumana y apareceria el signo. 
 
         console.log(posicionSigno);
         console.log(Posicion1);
