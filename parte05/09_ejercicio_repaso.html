@@ -15,7 +15,17 @@
         * Pista:
         * Puedes utilizar un bucle para ir pedir una palabra al usuario e introducirlo en cada una de las posiciones del array.
         */
+    let lista = [];
+    let posicion = ["primer", "segundo", "tercero"]; // posicion en la alerta de google 
+    
+    
+    for (let i = 0; i < 3; i = i + 1){ // bucle para obtener la informacion de los 3 strings 
+        lista[i] = prompt("Introduzca el " + posicion[i] + " string que desee"); // alerta relacionada para que salgan los 3 strings
+    }
 
+    console.log(lista[1]); // segundo resultado
+    console.log(lista[2]); // tercer resultado
+    console.log(lista[0]); // primer resultado
 
     </script>
 </body>
