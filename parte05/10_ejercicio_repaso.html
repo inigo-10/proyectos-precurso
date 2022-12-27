@@ -13,13 +13,17 @@
         * Crear un array de 10 números. Usar un for para asignar los valores de 20 a 11 a las 10 posiciones
         * (en orden descendente). Usar un for para mostrar los 10 valores en pantalla.
         */
-        
-        let numeros = 10; 
-        let numInicial = 10; 
+        // Crear un array de 10 elementos vacio.
+        let numeros = Array(10); 
 
-        
-        for(let orden = numeros - 1; valor > 0; orden = orden - 1){
-            numInicial = numInicial + 1; 
+        // Asignar los valores de 20 a 11 a las posiciones del array. 
+        for (let i = 0; i < numeros.length; i = i + 1){
+            numeros[i] = 20 - i; 
+        }
+
+        // Mostrar los 10 valores en pantalla. 
+        for(let i = 0; i < numeros.length; i = i + 1){
+            console.log(numeros[i]); 
         }
 
     </script>

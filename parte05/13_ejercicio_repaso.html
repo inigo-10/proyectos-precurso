@@ -24,8 +24,20 @@
         * 9	2
         * 10 1
         */
-        let numeros = 11; 
-        let valores = numeros - 1; 
+        
+        let numeros = Array(11); 
+
+        let value = prompt("Introduce un valor entre 0 y 10"); 
+
+        if (value >=0 && value <= 10){
+            numeros[value]++;
+        } else if (value < 0){
+            for(let i = 0; i < numeros.length; i = i + 1){
+                console.log(numeros[value]);
+            }
+
+        }  
+        
     </script>
 </body>
 
